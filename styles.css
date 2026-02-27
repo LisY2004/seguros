@@ -1,0 +1,855 @@
+/* Estilos generales */
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fefdff; /* Fondo ligeramente beige para dar sensación vintage */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.dark {
+  background: #2d3665;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #2d3665; /* Color oscuro para el header */
+  color: #ecf0f1;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #bdc3c7 3px solid;
+}
+
+header a {
+  color: #ecf0f1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header .contact-info {
+  float: right;
+  margin-top: 10px;
+}
+
+header .contact-info a,
+header .contact-info p {
+  display: inline;
+  padding: 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+header nav li {
+  display: inline;
+  padding: 0 20px;
+}
+
+header .highlight,
+header .current a {
+  color: #9b51d7;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background: url("hero-image.jpg") no-repeat center center / cover;
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* Boxes */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+/* Sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+/* Main-col */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* Services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background: #9b51d7;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #8c55b9;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #2d3665;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #9b51d7;
+  text-transform: uppercase;
+  border-bottom: 2px solid #9b51d7;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.footer-section i {
+  color: white;
+  margin-right: 8px;
+}
+
+/* Redes sociales */
+.social-icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-grid {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .social-icons {
+      justify-content: center;
+  }
+}
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+}
+
+/* Estilos específicos para la página de Trayectoria */
+.trayectoria,
+.proposito,
+.why-broker,
+.explicativo,
+.seguros-individuales,
+.seguros-corporativos {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #2d3665;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns > section {
+  width: 48%;
+}
+
+/* Estilos específicos para la página de Seguros */
+.seguros-opciones,
+.contacto-seguros,
+.promociones {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para la página de Contacto */
+.formulario-contacto,
+.imagen-contacto {
+  width: 48%;
+}
+
+.opciones-seguros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seguro {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para el Cotizador */
+#cotizador-form,
+#resultado-estimacion,
+#tipos-seguros {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cotizador-form div {
+  display: flex;
+  background: #ffffff;
+
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto dentro del label */
+  margin-bottom: 10px;
+}
+
+
+/* Estilos específicos para la página de Seguro Personalizado */
+#seguros-seleccionados,
+#descripcion-detallada,
+#medios-contratacion {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.S_catalizador{
+justify-content: center; /* Centra los elementos verticalmente */
+border-radius: 5px;
+background-color: transparent;
+width: 90%;
+}
+
+/* Estilo vintage */
+body {
+  font-family: "Playfair Display", serif; /* Una fuente más elegante y vintage */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif; /* Una fuente más moderna para los títulos */
+}
+
+.vintage-border {
+  border: 2px solid #9b51d7; /* Borde dorado para elementos destacados */
+  padding: 20px;
+  background-color: #f9f6f0; /* Fondo ligeramente beige */
+}
+
+.vintage-button {
+  background-color: #9b51d7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  border-radius: 10%;
+}
+
+.vintage-button:hover {
+  background-color: #8748ba;
+}
+
+/* Añade estas reglas al final del archivo styles.css */
+.feature-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+#boxes .box img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#boxes .box img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajusta el estilo de #showcase para usar la imagen de fondo */
+#showcase {
+    min-height: 400px;
+    background: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+/* Estilos para los enlaces de seguros en la página principal de seguros */
+.seguro-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.seguro-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilos para las páginas de seguros específicos */
+.aseguradoras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.aseguradora {
+  flex: 1 1 300px;
+  border: 1px solid #9b51d7;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f6f0;
+}
+
+.aseguradora h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #9b51d7;
+  padding-bottom: 10px;
+}
+
+.planes {
+  list-style-type: none;
+  padding: 0;
+}
+
+.planes li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.planes h3 {
+  color: #9b51d7;
+  margin-top: 0;
+}
+
+.planes p {
+  margin: 5px 0;
+}
+
+.planes .vintage-button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* Círculos de ayuda */
+.help-circles {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+.help-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #9b51d7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.help-circle i {
+  font-size: 24px;
+}
+
+.help-circle span {
+  position: absolute;
+  right: 70px;
+  background: #2d3665;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  color: white;
+}
+
+.help-circle:hover {
+  transform: scale(1.1);
+  background-color: #8748ba;
+  color: white;
+}
+
+.help-circle:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Estilos específicos para el Cotizador */
+#cotizador-form {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cotizador-form div.mb-3 {
+  display: flex;
+  background: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+    font-size: 36px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    margin-bottom: 20px;
+  }
+
+  .help-circles {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .help-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .help-circle span {
+    display: none;
+  }
+}
+
+
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background: url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80")
+    no-repeat center center / cover;
+  text-align: center;
+  color: #ffffff;
+  position: relative; /* Añadido para posicionar el contenido */
+}
+
+#showcase .container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute; /* Posicionamiento absoluto */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta la posición */
+  width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+
+/* Style para CONTACTAR */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  
+  background-color: rgb(227, 223, 230);
+  margin: 5% auto;
+  padding: 20px;
+  width: 25%;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+#contenido_div{
+
+  text-align: justify;
+  padding:2%;
+  position: fixed;
+  top: 180px;
+  right: 135px;
+  width: 300px;
+  background-color: #d2b3e9;
+  z-index: 100;
+}
+
+
+
+
+/*Estilso para las imagenes del cotizados*/
+
+#main-col_1 {
+  max-width: 900px;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.page-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para cada sección */
+#cotizador-form_1 div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#cotizador-form_1 div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las imágenes */
+#cotizador-form_1 img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#cotizador-form_1 img:hover {
+  transform: scale(1.05);
+}
+
+/* Botones */
+.vintage-button_1 {
+  background: linear-gradient(135deg, #b774ed, #8748ba);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.vintage-button:hover_1 {
+  background: linear-gradient(135deg, #8748ba, #b774ed);
+  transform: scale(1.05);
+}
+
+
+
+/* Botón Enviar */
+.vintage-button {
+  background: linear-gradient(135deg, #b774ed, #8748ba);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.vintage-button:hover {
+  background: linear-gradient(135deg, #8748ba, #b774ed);
+  transform: scale(1.05);
+}
+
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

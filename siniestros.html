@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - V & F Seguros </title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+     <script src="cotizador.js" defer></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding" style="display: flex; align-items: center;">
+                <img  width="20%" src="/Brocker/img/logo3.png" alt="V & F Seguros Logo">
+                <h1 style="margin-right: 10px;"><span class="highlight">V </span>& F Seguros</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="trayectoria.html">Trayectoria</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li class="current"><a href="siniestros.html">Siniestros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col" style="display: flex; justify-content: center;">
+                <div  style="max-width: 800px; width: 100%; margin-top: 5%; margin-left:10%;">
+                    <h1 class="page-title">Reporte de Siniestro</h1>
+                    <form>
+                        <!-- Datos del Asegurado -->
+                        <div class="mb-3_3">
+                            <label for="nombre-asegurado" class="form-label">Nombre completo del asegurado:</label>
+                            <input type="text" class="form-control" id="nombre-asegurado" name="nombre-asegurado" placeholder="Ingrese sus nombres completos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero-policia" class="form-label">Número de póliza:</label>
+                            <input type="text" class="form-control" id="numero-policia" name="numero-policia" placeholder="Ingrese su número de póliza" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo-seguro" class="form-label">Tipo de seguro:</label>
+                            <select class="form-control" id="tipo-seguro" name="tipo-seguro" required>
+                                <option value="auto">Auto</option>
+                                <option value="hogar">Hogar</option>
+                                <option value="vida">Vida</option>
+                                <option value="salud">Salud</option>
+                            </select>
+                        </div>
+
+                        <!-- Datos del Siniestro -->
+                        <div class="mb-3">
+                            <label for="fecha-siniestro" class="form-label">Fecha y hora del siniestro:</label>
+                            <input type="datetime-local" class="form-control" id="fecha-siniestro" name="fecha-siniestro" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo-siniestro" class="form-label">Tipo de siniestro:</label>
+                            <select class="form-control" id="tipo-siniestro" name="tipo-siniestro" required>
+                                <option value="accidente">Accidente</option>
+                                <option value="incendio">Incendio</option>
+                                <option value="robo">Robo</option>
+                                <option value="enfermedad">Enfermedad</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion-siniestro" class="form-label">Descripción del siniestro:</label>
+                            <textarea class="form-control" id="descripcion-siniestro" name="descripcion-siniestro" rows="4" placeholder="Describe brevemente el siniestro" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lugar-siniestro" class="form-label">Lugar del siniestro:</label>
+                            <input type="text" class="form-control" id="lugar-siniestro" name="lugar-siniestro" placeholder="Ingrese la ubicación del siniestro" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero-reporte" class="form-label">Número de reporte policial (si aplica):</label>
+                            <input type="text" class="form-control" id="numero-reporte" name="numero-reporte" placeholder="Ingrese el número de reporte policial">
+                        </div>
+                        <div class="mb-3">
+                            <label for="testigos-siniestro" class="form-label">Testigos del siniestro (si existen):</label>
+                            <textarea class="form-control" id="testigos-siniestro" name="testigos-siniestro" rows="3" placeholder="Ingrese los detalles de los testigos"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fotos-siniestro" class="form-label">Fotos del siniestro:</label>
+                            <input type="file" class="form-control" id="fotos-siniestro" name="fotos-siniestro" multiple>
+                        </div>
+
+                        <!-- Aseguradora -->
+                        <div class="mb-3">
+                            <label for="aseguradora" class="form-label">Aseguradora:</label>
+                            <select class="form-control" id="aseguradora" name="aseguradora" required>
+                                <option value="aseguradora1">Aseguradora 1</option>
+                                <option value="aseguradora2">Aseguradora 2</option>
+                                <option value="aseguradora3">Aseguradora 3</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero-policia-aseguradora" class="form-label">Número de póliza en la aseguradora:</label>
+                            <input type="text" class="form-control" id="numero-policia-aseguradora" name="numero-policia-aseguradora" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="agente-aseguradora" class="form-label">Agente o representante de la aseguradora:</label>
+                            <input type="text" class="form-control" id="agente-aseguradora" name="agente-aseguradora">
+                        </div>
+
+                        <!-- Detalles de la Reclamación -->
+                        <div class="mb-3">
+                            <label for="monto-danos" class="form-label">Monto estimado de los daños:</label>
+                            <input type="number" class="form-control" id="monto-danos" name="monto-danos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="estado-reclamacion" class="form-label">Estado de la reclamación:</label>
+                            <select class="form-control" id="estado-reclamacion" name="estado-reclamacion" required>
+                                <option value="pendiente">Pendiente</option>
+                                <option value="aprobada">Aprobada</option>
+                                <option value="rechazada">Rechazada</option>
+                                <option value="en-proceso">En proceso</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero-expediente" class="form-label">Número de expediente de la aseguradora:</label>
+                            <input type="text" class="form-control" id="numero-expediente" name="numero-expediente">
+                        </div>
+
+                        <!-- Documentación Adicional -->
+                        <div class="mb-3">
+                            <label for="documentos-adicionales" class="form-label">Subir documentos relevantes:</label>
+                            <input type="file" class="form-control" id="documentos-adicionales" name="documentos-adicionales" multiple>
+                        </div>
+
+                        <!-- Comentarios Adicionales -->
+                        <div class="mb-3">
+                            <label for="comentarios-adicionales" class="form-label">Observaciones adicionales:</label>
+                            <textarea class="form-control" id="comentarios-adicionales" name="comentarios-adicionales" rows="4" placeholder="Agregar observaciones adicionales"></textarea>
+                        </div>
+
+                        <button type="submit" class="vintage-button">Enviar Reporte</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Círculos de ayuda en la parte inferior -->
+    <div class="help-circles">
+        <a href="https://wa.me/593983464629" class="help-circle" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+
+        <a href="#" class="help-circle" onclick="mostrarContacto()">
+            <i class="fas fa-phone"></i>
+            <span>Contáctanos</span>
+        </a>
+    </div>
+
+    <!-- Formulario emergente -->
+    <div id="contacto" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarContacto()">&times;</span>
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Información de Contacto</h3>
+                    <p>Teléfono: +593 0995634281</p>
+                    <p>Email: info@virtusnexus.com</p>
+                    <p>Dirección: Calle Principal 123, Ciudad</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    
+                    <!-- Sección Contacto -->
+                    <div class="footer-section">
+                        <h3>Siniestro</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
+                        <p><i class="fas fa-phone"></i> +593 0995634281</p>
+                        <p><i class="fas fa-envelope"></i> info@virtusnexus.com</p>
+                        <p><i class="fas fa-clock"></i> Lun-Vie: 9:00 - 18:00</p>
+                    </div>
+                    
+                    <!-- Sección Redes Sociales -->
+                    <div class="footer-section" >
+                        <h3>Síguenos</h3>
+                        <div style="margin-left: 40%;" class="social-icons">
+                            <a href="https://www.facebook.com/61561026639788/videos/?_rdr" target="_blank" class="social-icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/vyfseguros?igsh=cGZka2ppc2N6YzZw " target="_blank" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<style>
+/* Formulario */
+form .mb-3 {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    color: #495057;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>

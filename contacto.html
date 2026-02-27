@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - V & F Seguros </title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+     <script src="cotizador.js" defer></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding" style="display: flex; align-items: center;">
+                <img  width="20%" src="/Brocker/img/logo3.png" alt="V & F Seguros Logo">
+                <h1 style="margin-right: 10px;"><span class="highlight">V </span>& F Seguros</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="trayectoria.html">Trayectoria</a></li>
+                    <li><a href="seguros.html">Seguros</a></li>
+                    <li><a href="siniestros.html">Siniestros</a></li>
+                    <li class="current"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container" style="margin-top: 5%;">
+            <article id="main-col">
+                <h1 class="page-title">Contáctanos</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombres Completos:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese sus nombres completos"  required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono/Celular:</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de contacto" onkeypress="return isNumber(event)" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com" required>
+                    </div>
+                    <label for="Mensaje" class="form-label">Mensaje:</label>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" rows="2"></textarea>
+                        <label id="Mensajes" for="floatingTextareaDisabled">Mensaje</label>
+                      </div>
+                      <button type="submit" class="vintage-button" onclick="enviarCorreo_Contacto()">Enviar</button>
+                    </form>
+            </article>
+
+            <aside  id="sidebar">
+                <div style="margin-left: 20%;" class="dark">
+                    <img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg">
+                    <div style=" margin-top: 10%; display: flex; justify-content: left; text-align: center;">
+                        <a href="cotizador.html" class="vintage-button">Ir al Cotizador</a>
+                </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+
+
+ <!-- Círculos de ayuda en la parte inferior -->
+ <div class="help-circles">
+    <a href="https://wa.me/593983464629" class="help-circle" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <a href="#" class="help-circle" onclick="mostrarContacto()">
+        <i class="fas fa-phone"></i>
+        <span>Contáctanos</span>
+    </a>
+</div>
+
+<!-- Formulario emergente -->
+<div id="contacto" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarContacto()">&times;</span>
+        <aside id="sidebar">
+            <div class="dark">
+                <h3>Información de Contacto</h3>
+                <p>Teléfono: +593 0995634281</p>
+                <p>Email: info@virtusnexus.com</p>
+                <p>Dirección: Calle Principal 123, Ciudad</p>
+            </div>
+        </aside>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Sección Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> +593 0995634281</p>
+                    <p><i class="fas fa-envelope"></i> info@virtusnexus.com</p>
+                    <p><i class="fas fa-clock"></i> Lun-Vie: 9:00 - 18:00</p>
+                </div>
+                
+                <!-- Sección Redes Sociales -->
+                <div class="footer-section" >
+                    <h3>Síguenos</h3>
+                    <div style="margin-left: 40%;" class="social-icons">
+                        <a href="https://www.facebook.com/61561026639788/videos/?_rdr" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vyfseguros?igsh=cGZka2ppc2N6YzZw " target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+<style>
+    /* Estilos del formulario */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+
+
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close:hover {
+    color: red;
+}
+
+
+
+</style>
