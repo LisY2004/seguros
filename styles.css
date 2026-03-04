@@ -72,14 +72,22 @@ header nav li {
   padding: 0 20px;
 }
 
+/* Navbar links default white */
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Highlight for current page or special links */
 header .highlight,
 header .current a {
-  color: #3d796e;
+  color: #baf5c3; /* light green */
   font-weight: bold;
 }
 
+/* Hover state on any header link */
 header a:hover {
-  color: #ffffff;
+  color: #baf5c3; /* same light green */
   font-weight: bold;
 }
 
