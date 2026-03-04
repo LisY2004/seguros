@@ -11,7 +11,7 @@
 
 /* Estilos para el header */
 header {
-    background-color: #2d3665;
+    background-color: #204e55;
     color: white;
     padding: 1rem 0;
     position: relative;
@@ -51,7 +51,7 @@ header .container {
 }
 
 .highlight {
-    color: #9b51d7;
+    color: #3d796e;
     font-weight: 800;
     position: relative;
     display: inline-block;
@@ -94,19 +94,19 @@ nav a {
     position: relative;
 }
 
-nav a::after {
+    nav a::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #9b51d7;
+    background-color: #3d796e;
     transition: width 0.3s ease;
 }
 
 nav a:hover {
-    color: #9b51d7;
+    color: #3d796e;
 }
 
 nav a:hover::after {
@@ -114,13 +114,13 @@ nav a:hover::after {
 }
 
 nav .current a {
-    color: #9b51d7;
+    color: #3d796e;
     font-weight: 600;
 }
 
 nav .current a::after {
     width: 100%;
-    background-color: #9b51d7;
+    background-color: #3d796e;
 }
 
 /* Botón de menú móvil */
@@ -278,7 +278,7 @@ h2 {
 
 /* Botón de volver */
 .btn-volver {
-    background-color: #9b51d7;
+    background-color: #3d796e;
     color: white;
     border: none;
     padding: 0.75rem 1.75rem;
@@ -291,7 +291,7 @@ h2 {
 }
 
 .btn-volver:hover {
-    background-color: #ad75db;
+    background-color: #417d72;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
@@ -354,7 +354,7 @@ h2 {
 
 .info-value {
     font-size: 1.1rem;
-    color: #9b51d7;
+    color: #3d796e;
 }
 
 /* Sección de documentos */
@@ -437,7 +437,7 @@ h2 {
 
 /* Botón de documento */
 .btn-document {
-    background-color: #17a2b8;
+    background-color: #417d72;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -448,7 +448,7 @@ h2 {
 }
 
 .btn-document:hover {
-    background-color: #138496;
+    background-color: #417d72;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     color: white;
@@ -535,7 +535,7 @@ h2 {
 
 /* Estilos para el header */
 header {
-    background-color: #2d3665;
+    background-color: #204e55;
     color: white;
     padding: 1rem 0;
     position: relative;
@@ -575,7 +575,7 @@ header .container {
 }
 
 .highlight {
-    color: #9b51d7;
+    color: #3d796e;
     font-weight: 800;
     position: relative;
     display: inline-block;
@@ -625,12 +625,12 @@ nav a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #9b51d7;
+    background-color: #3d796e;
     transition: width 0.3s ease;
 }
 
 nav a:hover {
-    color: #9b51d7;
+    color: #3d796e;
 }
 
 nav a:hover::after {
@@ -638,13 +638,13 @@ nav a:hover::after {
 }
 
 nav .current a {
-    color: #9b51d7;
+    color: #3d796e;
     font-weight: 600;
 }
 
 nav .current a::after {
     width: 100%;
-    background-color: #9b51d7;
+    background-color: #3d796e;
 }
 
 /* Botón de menú móvil */
@@ -802,7 +802,7 @@ h2 {
 
 /* Botón de volver */
 .btn-volver {
-    background-color: #9b51d7;
+    background-color: #3d796e;
     color: white;
     border: none;
     padding: 0.75rem 1.75rem;
@@ -815,7 +815,7 @@ h2 {
 }
 
 .btn-volver:hover {
-    background-color: #ad75db;
+    background-color: #417d72;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
@@ -878,7 +878,7 @@ h2 {
 
 .info-value {
     font-size: 1.1rem;
-    color: #9b51d7;
+    color: #3d796e;
 }
 
 /* Sección de documentos */

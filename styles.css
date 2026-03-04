@@ -15,7 +15,7 @@ body {
 }
 
 .dark {
-  background: #2d3665;
+  background: #204e55;
   color: white;
   padding: 20px;
   border-radius: 8px;
@@ -24,7 +24,7 @@ body {
 
 /* Header */
 header {
-  background: #2d3665; /* Color oscuro para el header */
+  background: #204e55; /* Color oscuro para el header */
   color: #ecf0f1;
   padding-top: 30px;
   min-height: 70px;
@@ -74,7 +74,7 @@ header nav li {
 
 header .highlight,
 header .current a {
-  color: #9b51d7;
+  color: #3d796e;
   font-weight: bold;
 }
 
@@ -153,7 +153,7 @@ form select {
 }
 
 form button {
-  background: #9b51d7;
+  background: #3d796e;
   color: #ffffff;
   padding: 10px 15px;
   border: none;
@@ -161,7 +161,7 @@ form button {
 }
 
 form button:hover {
-  background: #8c55b9;
+  background: #417d72;
 }
 
 
@@ -176,7 +176,7 @@ footer {
   padding: 20px;
   margin-top: 20px;
   color: #ffffff;
-  background-color: #2d3665;
+  background-color: #204e55;
   font-family: 'Arial', sans-serif;
   text-align: center;
 }
@@ -211,9 +211,9 @@ footer {
 .footer-section h3 {
   font-size: 20px;
   margin-bottom: 15px;
-  color: #9b51d7;
+  color: #3d796e;
   text-transform: uppercase;
-  border-bottom: 2px solid #9b51d7;
+  border-bottom: 2px solid #3d796e;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -248,7 +248,7 @@ footer {
 }
 
 .facebook {
-  background: #1877f2;
+  background: #417d72;
   color: white;
 }
 
@@ -375,7 +375,7 @@ footer {
   margin-bottom: 10px;
 }
 
-
+    box-shadow: 0 0 10px #204e55;
 /* Estilos específicos para la página de Seguro Personalizado */
 #seguros-seleccionados,
 #descripcion-detallada,
@@ -406,13 +406,13 @@ h3 {
 }
 
 .vintage-border {
-  border: 2px solid #9b51d7; /* Borde dorado para elementos destacados */
+  border: 2px solid #3d796e; /* Borde dorado para elementos destacados */
   padding: 20px;
   background-color: #f9f6f0; /* Fondo ligeramente beige */
 }
 
 .vintage-button {
-  background-color: #9b51d7;
+  background-color: #3d796e;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -424,7 +424,7 @@ h3 {
 }
 
 .vintage-button:hover {
-  background-color: #8748ba;
+  background-color: #417d72;
 }
 
 /* Añade estas reglas al final del archivo styles.css */
@@ -504,7 +504,7 @@ h3 {
 
 .aseguradora {
   flex: 1 1 300px;
-  border: 1px solid #9b51d7;
+  border: 1px solid #3d796e;
   border-radius: 5px;
   padding: 20px;
   background-color: #f9f6f0;
@@ -512,7 +512,7 @@ h3 {
 
 .aseguradora h2 {
   color: #2c3e50;
-  border-bottom: 2px solid #9b51d7;
+  border-bottom: 2px solid #3d796e;
   padding-bottom: 10px;
 }
 
@@ -530,7 +530,7 @@ h3 {
 }
 
 .planes h3 {
-  color: #9b51d7;
+  color: #3d796e;
   margin-top: 0;
 }
 
@@ -562,7 +562,7 @@ h3 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #9b51d7;
+  background-color: #3d796e;
   color: white;
   display: flex;
   align-items: center;
@@ -581,7 +581,7 @@ h3 {
 .help-circle span {
   position: absolute;
   right: 70px;
-  background: #2d3665;
+  background: #204e55;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 14px;
@@ -594,7 +594,7 @@ h3 {
 
 .help-circle:hover {
   transform: scale(1.1);
-  background-color: #8748ba;
+  background-color: #417d72;
   color: white;
 }
 
@@ -737,7 +737,7 @@ h3 {
   top: 180px;
   right: 135px;
   width: 300px;
-  background-color: #d2b3e9;
+  background-color: #417d72;
   z-index: 100;
 }
 
@@ -798,7 +798,7 @@ h3 {
 
 /* Botones */
 .vintage-button_1 {
-  background: linear-gradient(135deg, #b774ed, #8748ba);
+  background: linear-gradient(135deg, #3d796e, #204e55);
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -814,7 +814,7 @@ h3 {
 }
 
 .vintage-button:hover_1 {
-  background: linear-gradient(135deg, #8748ba, #b774ed);
+  background: linear-gradient(135deg, #204e55, #3d796e);
   transform: scale(1.05);
 }
 
@@ -822,7 +822,7 @@ h3 {
 
 /* Botón Enviar */
 .vintage-button {
-  background: linear-gradient(135deg, #b774ed, #8748ba);
+  background: linear-gradient(135deg, #3d796e, #204e55);
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -838,7 +838,7 @@ h3 {
 }
 
 .vintage-button:hover {
-  background: linear-gradient(135deg, #8748ba, #b774ed);
+  background: linear-gradient(135deg, #204e55, #3d796e);
   transform: scale(1.05);
 }
 
