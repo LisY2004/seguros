@@ -86,40 +86,16 @@ de Siniestros</p>
     </div>
 </div>
 
-<footer>
-    <div class="footer-content">
-        <div class="container">
-            <div class="footer-grid">
-                
-                 <!-- Sección Contacto -->
-                <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Calles Junín 421 y General Córdova, piso 4 oficina 12 Guayaquil, Quito</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Agencia: Av Machala 1426 y Carlos V Quito </p>
-                    <p><i class="fas fa-phone"></i> +593 099100400</p>
-                    <p><i class="fas fa-phone"></i> +593 098393939</p>
-                    <p><i class="fas fa-envelope"></i> surveyor@peryasa.com</p>
-                     <p><i class="fas fa-envelope"></i> ffalconi@peryasa.com</p>
-                    <p><i class="fas fa-clock"></i> Lun-Vie: 9:00 - 18:00</p>
-                </div>
-                
-                <!-- Sección Redes Sociales -->
-                <div class="footer-section" >
-                    <h3>Síguenos</h3>
-                    <div style="margin-left: 40%;" class="social-icons">
-                        <a href="https://www.facebook.com/61561026639788/videos/?_rdr" target="_blank" class="social-icon facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/vyfseguros?igsh=cGZka2ppc2N6YzZw " target="_blank" class="social-icon instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+ <footer id="footer"></footer>
 
-        </div>
-    </div>
-</footer>
+<script>
+    // Cargar el footer modular
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>
 </body>
 </html>
 
