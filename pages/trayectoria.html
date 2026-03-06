@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trayectoria - PERYAS FFALCON</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-     <script src="/assetes/js/cotizador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/assetes/js/cotizador.js"></script>
     <link rel="stylesheet" href="/assetes/css/styles.css">
 
     <style>
         :root {
-            --teal-dark:  #1a4a4a;
-            --teal-mid:   #204e55;
+            --teal-dark: #1a4a4a;
+            --teal-mid: #204e55;
             --teal-light: #17705e;
 
-            --gold:       #c9a84c;
-            --cream:      #f7f4ef;
-            --text-dark:  #1c2826;
-            --text-mid:   #4a5e5c;
+            --gold: #c9a84c;
+            --cream: #f7f4ef;
+            --text-dark: #1c2826;
+            --text-mid: #4a5e5c;
         }
 
         body {
@@ -38,164 +41,560 @@
             position: relative;
             overflow: hidden;
         }
+
         .tray-hero::before {
             content: '';
-            position: absolute; inset: 0;
+            position: absolute;
+            inset: 0;
             background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
+
         .tray-hero .eyebrow {
-            font-size: .78rem; letter-spacing: 3px; text-transform: uppercase;
-            color: rgba(255,255,255,.5); margin-bottom: 12px; position: relative;
+            font-size: .78rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .5);
+            margin-bottom: 12px;
+            position: relative;
         }
+
         .tray-hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(1.9rem, 5vw, 3rem);
-            color: #fff; position: relative;
+            color: #fff;
+            position: relative;
         }
 
         /* navigation links should use the same display font as the hero heading */
         header nav ul li a {
             font-family: 'Playfair Display', serif;
         }
+
         .tray-hero .sub {
-            color: rgba(255,255,255,.75); font-size: 1.05rem;
-            margin-top: 10px; font-weight: 300; position: relative;
+            color: rgba(255, 255, 255, .75);
+            font-size: 1.05rem;
+            margin-top: 10px;
+            font-weight: 300;
+            position: relative;
         }
-        .hero-line { width: 56px; height: 3px; background: var(--gold); margin: 18px auto 0; position: relative; }
+
+        .hero-line {
+            width: 56px;
+            height: 3px;
+            background: var(--gold);
+            margin: 18px auto 0;
+            position: relative;
+        }
 
         /* ── SECTIONS ── */
-        .tray-section        { padding: 68px 0; background: var(--cream); }
-        .tray-section.white  { background: #fff; }
+        .tray-section {
+            padding: 68px 0;
+            background: var(--cream);
+        }
+
+        .tray-section.white {
+            background: #fff;
+        }
 
         .section-eyebrow {
-            font-size: .78rem; letter-spacing: 2.5px; text-transform: uppercase;
-            color: var(--teal-light); margin-bottom: 6px;
+            font-size: .78rem;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--teal-light);
+            margin-bottom: 6px;
         }
+
         .section-heading {
             font-family: 'Playfair Display', serif;
-            font-size: 1.85rem; color: var(--teal-dark); margin-bottom: 32px;
+            font-size: 1.85rem;
+            color: var(--teal-dark);
+            margin-bottom: 32px;
         }
-        .gold-bar { width: 44px; height: 3px; background: var(--gold); margin-bottom: 10px; }
+
+        .gold-bar {
+            width: 44px;
+            height: 3px;
+            background: var(--gold);
+            margin-bottom: 10px;
+        }
 
         /* ── PERFIL ── */
         .profile-grid {
-            display: grid; grid-template-columns: 240px 1fr;
-            gap: 48px; align-items: start;
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 48px;
+            align-items: start;
         }
+
         .profile-card {
-            background: var(--teal-dark); border-radius: 12px;
-            overflow: hidden; box-shadow: 0 12px 36px rgba(26,74,74,.22);
+            background: var(--teal-dark);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 12px 36px rgba(26, 74, 74, .22);
         }
-        .profile-card img { width: 100%; display: block; object-fit: cover; object-position: top; }
-        .profile-card-info { padding: 18px 16px; text-align: center; }
-        .profile-card-info h3 { color: #fff; font-size: 1rem; font-weight: 700; line-height: 1.3; }
-        .profile-card-info p  { color: rgba(255,255,255,.55); font-size: .78rem; margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; }
 
-        .badge-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
-        .badge { background: var(--teal-dark); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: .75rem; }
+        .profile-card img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: top;
+        }
 
-        .profile-content h2 { font-family: 'Playfair Display', serif; font-size: 1.9rem; color: var(--teal-dark); line-height: 1.2; }
-        .cargo { color: var(--teal-light); font-size: .85rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        .profile-desc { color: var(--text-mid); line-height: 1.75; font-size: .95rem; }
+        .profile-card-info {
+            padding: 18px 16px;
+            text-align: center;
+        }
 
-        .exp-list { list-style: none; padding: 0; margin-top: 24px; }
-        .exp-list li { display: flex; gap: 14px; padding: 13px 0; border-bottom: 1px solid #e5edeb; }
-        .exp-list li:last-child { border-bottom: none; }
-        .exp-dot { width: 10px; height: 10px; background: var(--gold); border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
-        .exp-company { font-weight: 700; color: var(--teal-dark); font-size: .92rem; }
-        .exp-role    { font-size: .83rem; color: var(--text-mid); margin-top: 2px; }
-        .exp-years   { font-size: .78rem; color: var(--teal-light); font-weight: 700; margin-top: 2px; }
+        .profile-card-info h3 {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .profile-card-info p {
+            color: rgba(255, 255, 255, .55);
+            font-size: .78rem;
+            margin-top: 4px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 14px;
+        }
+
+        .badge {
+            background: var(--teal-dark);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: .75rem;
+        }
+
+        .profile-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.9rem;
+            color: var(--teal-dark);
+            line-height: 1.2;
+        }
+
+        .cargo {
+            color: var(--teal-light);
+            font-size: .85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .profile-desc {
+            color: var(--text-mid);
+            line-height: 1.75;
+            font-size: .95rem;
+        }
+
+        .exp-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 24px;
+        }
+
+        .exp-list li {
+            display: flex;
+            gap: 14px;
+            padding: 13px 0;
+            border-bottom: 1px solid #e5edeb;
+        }
+
+        .exp-list li:last-child {
+            border-bottom: none;
+        }
+
+        .exp-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--gold);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        .exp-company {
+            font-weight: 700;
+            color: var(--teal-dark);
+            font-size: .92rem;
+        }
+
+        .exp-role {
+            font-size: .83rem;
+            color: var(--text-mid);
+            margin-top: 2px;
+        }
+
+        .exp-years {
+            font-size: .78rem;
+            color: var(--teal-light);
+            font-weight: 700;
+            margin-top: 2px;
+        }
 
         /* ── ANTECEDENTE ── */
-        .ante-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: start; }
+        .ante-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 52px;
+            align-items: start;
+        }
 
-        .timeline { position: relative; padding-left: 28px; }
+        .timeline {
+            position: relative;
+            padding-left: 28px;
+        }
+
         .timeline::before {
-            content: ''; position: absolute; left: 6px; top: 0; bottom: 0;
-            width: 2px; background: linear-gradient(to bottom, var(--teal-light), var(--teal-dark));
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--teal-light), var(--teal-dark));
         }
-        .tl-item { position: relative; margin-bottom: 28px; }
-        .tl-dot {
-            position: absolute; left: -26px; top: 4px;
-            width: 12px; height: 12px; background: var(--gold); border-radius: 50%;
-            border: 2px solid #fff; box-shadow: 0 0 0 2px var(--gold);
-        }
-        .tl-year { font-size: .75rem; color: var(--teal-light); letter-spacing: 2px; font-weight: 700; }
-        .tl-text { font-size: .92rem; color: var(--text-dark); margin-top: 4px; line-height: 1.55; }
 
-        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-        .stat-card {
-            background: var(--cream); border: 1px solid #dde8e5;
-            border-left: 4px solid var(--teal-light); border-radius: 8px; padding: 24px 20px;
+        .tl-item {
+            position: relative;
+            margin-bottom: 28px;
         }
-        .stat-card .number { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--teal-dark); line-height: 1; }
-        .stat-card .label  { font-size: .82rem; color: var(--text-mid); margin-top: 6px; line-height: 1.4; }
-        .ante-note { margin-top: 20px; color: var(--text-mid); font-size: .88rem; line-height: 1.7; }
+
+        .tl-dot {
+            position: absolute;
+            left: -26px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            background: var(--gold);
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px var(--gold);
+        }
+
+        .tl-year {
+            font-size: .75rem;
+            color: var(--teal-light);
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .tl-text {
+            font-size: .92rem;
+            color: var(--text-dark);
+            margin-top: 4px;
+            line-height: 1.55;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .stat-card {
+            background: var(--cream);
+            border: 1px solid #dde8e5;
+            border-left: 4px solid var(--teal-light);
+            border-radius: 8px;
+            padding: 24px 20px;
+        }
+
+        .stat-card .number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            color: var(--teal-dark);
+            line-height: 1;
+        }
+
+        .stat-card .label {
+            font-size: .82rem;
+            color: var(--text-mid);
+            margin-top: 6px;
+            line-height: 1.4;
+        }
+
+        .ante-note {
+            margin-top: 20px;
+            color: var(--text-mid);
+            font-size: .88rem;
+            line-height: 1.7;
+        }
 
         /* ── EXP COMERCIAL ── */
-        .exp-cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 8px; }
-        .exp-big-card {
-            background: var(--teal-dark); border-radius: 12px;
-            padding: 36px 30px; text-align: center; color: #fff;
-            position: relative; overflow: hidden;
+        .exp-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-top: 8px;
         }
-        .exp-big-card::after {
-            content: ''; position: absolute; bottom: -28px; right: -28px;
-            width: 90px; height: 90px; border-radius: 50%; background: rgba(255,255,255,.05);
-        }
-        .exp-big-card .big-num { font-family: 'Playfair Display', serif; font-size: 3.2rem; color: var(--gold); line-height: 1; }
-        .exp-big-card .unit    { font-size: .75rem; letter-spacing: 2px; color: rgba(255,255,255,.45); text-transform: uppercase; margin-top: 4px; }
-        .exp-big-card p        { font-size: .9rem; margin-top: 12px; color: rgba(255,255,255,.8); line-height: 1.5; }
 
-        /* ── CLIENTES ── */
-        .clients-intro { max-width: 600px; margin-bottom: 40px; color: var(--text-mid); line-height: 1.7; font-size: .95rem; }
-        .logos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 14px; }
-        .logo-box {
-            background: #fff; border: 1px solid #dde8e5; border-radius: 8px;
-            padding: 16px 12px; display: flex; align-items: center; justify-content: center;
-            min-height: 66px; transition: box-shadow .2s, transform .2s;
+        .exp-big-card {
+            background: var(--teal-dark);
+            border-radius: 12px;
+            padding: 36px 30px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
         }
-        .logo-box:hover { box-shadow: 0 8px 22px rgba(26,74,74,.13); transform: translateY(-3px); }
-        .logo-box span { font-weight: 700; font-size: .82rem; color: var(--teal-dark); text-align: center; line-height: 1.3; }
+
+        .exp-big-card::after {
+            content: '';
+            position: absolute;
+            bottom: -28px;
+            right: -28px;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .05);
+        }
+
+        .exp-big-card .big-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .exp-big-card .unit {
+            font-size: .75rem;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, .45);
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .exp-big-card p {
+            font-size: .9rem;
+            margin-top: 12px;
+            color: rgba(255, 255, 255, .8);
+            line-height: 1.5;
+        }
+
+        /* ── CARRUSEL CLIENTES ── */
+        .clients-track-wrapper {
+            overflow: hidden;
+            position: relative;
+            padding: 10px 0;
+        }
+
+        .clients-track-wrapper::before,
+        .clients-track-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 80px;
+            z-index: 2;
+        }
+
+        .clients-track-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, var(--cream), transparent);
+        }
+
+        .clients-track-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, var(--cream), transparent);
+        }
+
+        .clients-track {
+            display: flex;
+            gap: 16px;
+            width: max-content;
+            animation: scroll-logos 30s linear infinite;
+        }
+
+        .clients-track:hover {
+            animation-play-state: paused;
+        }
+
+        .logo-box {
+            background: #fff;
+            border: 1px solid #dde8e5;
+            border-radius: 8px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 66px;
+            min-width: 150px;
+            flex-shrink: 0;
+            transition: box-shadow .2s, transform .2s;
+        }
+
+        .logo-box:hover {
+            box-shadow: 0 8px 22px rgba(26, 74, 74, .13);
+            transform: translateY(-3px);
+        }
+
+        .logo-box span {
+            font-weight: 700;
+            font-size: .82rem;
+            color: var(--teal-dark);
+            text-align: center;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+
+        .logo-box img {
+            max-height: 100px;
+            max-width: 130px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(50%);
+            transition: filter .2s;
+        }
+
+        .logo-box:hover img {
+            filter: grayscale(0%);
+        }
+
+        @keyframes scroll-logos {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
         /* ── PROPÓSITO ── */
         .proposito-wrap {
             background: linear-gradient(135deg, var(--teal-dark), var(--teal-mid));
-            border-radius: 16px; padding: 52px 44px; color: #fff;
-            display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center;
+            border-radius: 16px;
+            padding: 52px 44px;
+            color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 44px;
+            align-items: center;
         }
-        .proposito-wrap h2 { font-family: 'Playfair Display', serif; font-size: 1.9rem; margin-bottom: 16px; }
-        .prop-text { color: rgba(255,255,255,.82); line-height: 1.75; font-size: .95rem; }
-        .proposito-icons { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+        .proposito-wrap h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.9rem;
+            margin-bottom: 16px;
+        }
+
+        .prop-text {
+            color: rgba(255, 255, 255, .82);
+            line-height: 1.75;
+            font-size: .95rem;
+        }
+
+        .proposito-icons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
         .p-icon {
-            background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14);
-            border-radius: 10px; padding: 20px; text-align: center;
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .14);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
         }
-        .p-icon .ico { font-size: 1.7rem; margin-bottom: 8px; }
-        .p-icon p { font-size: .8rem; color: rgba(255,255,255,.72); line-height: 1.4; margin: 0; }
+
+        .p-icon .ico {
+            font-size: 1.7rem;
+            margin-bottom: 8px;
+        }
+
+        .p-icon p {
+            font-size: .8rem;
+            color: rgba(255, 255, 255, .72);
+            line-height: 1.4;
+            margin: 0;
+        }
 
         /* ── BOXES (original del sitio, restyled) ── */
-        #boxes { background: var(--teal-dark); padding: 48px 0; }
-        #boxes .container { display: flex; justify-content: space-between; gap: 24px; }
+        #boxes {
+            background: var(--teal-dark);
+            padding: 48px 0;
+        }
+
+        #boxes .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
         #boxes .box {
-            flex: 1; background: rgba(255,255,255,.06);
-            border: 1px solid rgba(255,255,255,.12);
-            padding: 28px 22px; border-radius: 10px; text-align: center; color: #fff;
+            flex: 1;
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid rgba(255, 255, 255, .12);
+            padding: 28px 22px;
+            border-radius: 10px;
+            text-align: center;
+            color: #fff;
             transition: transform .3s, box-shadow .3s;
         }
-        #boxes .box:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.25); }
-        #boxes .box h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--gold); margin-bottom: 14px; }
-        #boxes .box img { width: 100%; max-width: 220px; border-radius: 8px; margin-bottom: 14px; aspect-ratio: 4/3; object-fit: cover; }
-        #boxes .box p { font-size: .88rem; color: rgba(255,255,255,.75); line-height: 1.6; }
+
+        #boxes .box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, .25);
+        }
+
+        #boxes .box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+        }
+
+        #boxes .box img {
+            width: 100%;
+            max-width: 220px;
+            border-radius: 8px;
+            margin-bottom: 14px;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        #boxes .box p {
+            font-size: .88rem;
+            color: rgba(255, 255, 255, .75);
+            line-height: 1.6;
+        }
 
         /* ── RESPONSIVE ── */
         @media (max-width: 900px) {
-            .profile-grid, .ante-grid, .exp-cards-grid, .proposito-wrap { grid-template-columns: 1fr; }
-            .proposito-wrap { padding: 34px 22px; }
-            #boxes .container { flex-direction: column; }
+
+            .profile-grid,
+            .ante-grid,
+            .exp-cards-grid,
+            .proposito-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            .proposito-wrap {
+                padding: 34px 22px;
+            }
+
+            #boxes .container {
+                flex-direction: column;
+            }
         }
+
         @media (max-width: 600px) {
-            .stats-grid, .proposito-icons { grid-template-columns: 1fr; }
+
+            .stats-grid,
+            .proposito-icons {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -255,9 +654,12 @@
                     <p class="cargo">Representante Legal · Ajustador Senior</p>
                     <div class="gold-bar"></div>
                     <p class="profile-desc">
-                        Economista graduado de la <strong>Universidad Católica de Quito</strong>, Facultad de Economía (1980).
-                        Cuenta con formación continua mediante cursos y seminarios en <strong>USA, Colombia, Brasil y Ecuador</strong>
-                        entre 1987 y 2020. Más de 35 años de trayectoria ininterrumpida en el sector asegurador ecuatoriano.
+                        Economista graduado de la <strong>Universidad Católica de Quito</strong>, Facultad de Economía
+                        (1980).
+                        Cuenta con formación continua mediante cursos y seminarios en <strong>USA, Colombia, Brasil y
+                            Ecuador</strong>
+                        entre 1987 y 2020. Más de 35 años de trayectoria ininterrumpida en el sector asegurador
+                        ecuatoriano.
                     </p>
                     <ul class="exp-list">
                         <li>
@@ -318,22 +720,29 @@
                     <div class="tl-item">
                         <div class="tl-dot"></div>
                         <div class="tl-year">1987</div>
-                        <div class="tl-text">Franklin Falconi inicia su actividad como <strong>Ajustador de Siniestros</strong> en Guayaquil, autorizado por la Superintendencia de Bancos con la Credencial No. 079 (Persona Natural).</div>
+                        <div class="tl-text">Franklin Falconi inicia su actividad como <strong>Ajustador de
+                                Siniestros</strong> en Guayaquil, autorizado por la Superintendencia de Bancos con la
+                            Credencial No. 079 (Persona Natural).</div>
                     </div>
                     <div class="tl-item">
                         <div class="tl-dot"></div>
                         <div class="tl-year">1992</div>
-                        <div class="tl-text">Se constituye formalmente la compañía <strong>Peryas Ffalcon S.A.</strong> en octubre, vigente hasta la presente fecha.</div>
+                        <div class="tl-text">Se constituye formalmente la compañía <strong>Peryas Ffalcon S.A.</strong>
+                            en octubre, vigente hasta la presente fecha.</div>
                     </div>
                     <div class="tl-item">
                         <div class="tl-dot"></div>
                         <div class="tl-year">1993</div>
-                        <div class="tl-text">La Superintendencia de Bancos otorga la <strong>Credencial No. 083</strong> en la categoría de Perito de Seguros — Inspectores y Ajustadores de Siniestros (17 de febrero de 1993).</div>
+                        <div class="tl-text">La Superintendencia de Bancos otorga la <strong>Credencial No. 083</strong>
+                            en la categoría de Perito de Seguros — Inspectores y Ajustadores de Siniestros (17 de
+                            febrero de 1993).</div>
                     </div>
                     <div class="tl-item">
                         <div class="tl-dot"></div>
                         <div class="tl-year">Hoy</div>
-                        <div class="tl-text">Con <strong>35 años de servicio ininterrumpido</strong> del equipo gerencial y 30 años de empresa, Peryas Ffalcon sigue siendo referente del mercado asegurador nacional.</div>
+                        <div class="tl-text">Con <strong>35 años de servicio ininterrumpido</strong> del equipo
+                            gerencial y 30 años de empresa, Peryas Ffalcon sigue siendo referente del mercado asegurador
+                            nacional.</div>
                     </div>
                 </div>
 
@@ -398,35 +807,38 @@
                 aseguradoras del Ecuador, construyendo relaciones sólidas basadas en la confianza,
                 la transparencia y la excelencia técnica.
             </p>
-            <div class="logos-grid">
-                <div class="logo-box"><span>La Unión Seguros</span></div>
-                <div class="logo-box"><span>CÓNDOR</span></div>
-                <div class="logo-box"><span>Pan American Life</span></div>
-                <div class="logo-box"><span>Seguros COLÓN</span></div>
-                <div class="logo-box"><span>Compañía de Seguros</span></div>
-                <div class="logo-box"><span>Rocafuerte Seguros</span></div>
-                <div class="logo-box"><span>MAPFRE ATLAS</span></div>
-                <div class="logo-box"><span>Aseguradora del Sur</span></div>
-                <div class="logo-box"><span>GENERALI Seguros</span></div>
-                <div class="logo-box"><span>ACE Seguros</span></div>
-                <div class="logo-box"><span>Seguros Sucre</span></div>
-                <div class="logo-box"><span>COOPSEGUROS S.A.</span></div>
-                <div class="logo-box"><span>Seguros Unidos</span></div>
-                <div class="logo-box"><span>Seguros Equinoccial</span></div>
-                <div class="logo-box"><span>Latina Seguros</span></div>
-                <div class="logo-box"><span>LLS Seguros</span></div>
-                <div class="logo-box"><span>Seguros Bolívar</span></div>
-                <div class="logo-box"><span>Pacifico Seguros</span></div>
-                <div class="logo-box"><span>Interoceánica</span></div>
-                <div class="logo-box"><span>Oriente Seguros</span></div>
-                <div class="logo-box"><span>ASSA Seguros</span></div>
+        </div>
+
+        <div class="clients-track-wrapper">
+            <div class="clients-track">
+                <!-- Lista original -->
+                <div class="logo-box"> <img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg"
+                        alt="La Unión Seguros"></div>
+                <div class="logo-box"><img width="80%" src="data:image/png;base64,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" alt="CÓNDOR"></div>
+                <div class="logo-box"><img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1zfZqq60Oryk6lnq_A4uUJYPb8usyp_BZA&s" alt="Pan American Life"></div>
+                <div class="logo-box"><img width="80%" src="https://media.licdn.com/dms/image/v2/C4E0BAQEAS5aQX-ZRdQ/company-logo_200_200/company-logo_200_200/0/1630595753194/pan_american_life_insurance_group_logo?e=2147483647&v=beta&t=HpPt3ZZJ2syuUSFhsoED__-_omwYzzHKQIfW7Bww7dI" alt="Seguros COLÓN"></div>
+                <div class="logo-box"><img width="80%" src="data:image/jpeg;base64,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" alt="Rocafuerte Seguros"></div>
+                <div class="logo-box"><img width="80%" src="https://i0.wp.com/deltaseguros.com.ec/wp-content/uploads/2022/10/Logo_Marca7b-e1767205650540.png?fit=257%2C131&ssl=1" alt="MAPFRE ATLAS"></div>
+                <div class="logo-box"><img width="80%" src="https://i0.wp.com/deltaseguros.com.ec/wp-content/uploads/2022/10/Logo_Marca6b.png" alt="Aseguradora del Sur"> </div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="GENERALI Seguros"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="ACE Seguros"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Seguros Sucre"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="COOPSEGUROS S.A."></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Seguros Unidos"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Seguros Equinoccial"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Latina Seguros"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="LLS Seguros"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Seguros Bolívar"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Pacifico Seguros"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Interoceánica"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="Oriente Seguros"></div>
+                <div class="logo-box"><img width="80%" src="https://ekosnegocios.com/image/posts/header/9821.jpg" alt="ASSA Seguros"></div>
             </div>
         </div>
     </section>
 
-    
 
-    
+
     <!-- FOOTER modular original -->
     <footer id="footer"></footer>
     <script>
@@ -436,4 +848,5 @@
     </script>
 
 </body>
+
 </html>
